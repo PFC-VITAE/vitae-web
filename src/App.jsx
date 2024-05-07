@@ -4,10 +4,17 @@ import {
     createRoutesFromElements,
     RouterProvider,
 } from "react-router-dom";
-import FileUploader from "./components/FileUploader";
+import MainLayout from "./layouts/MainLayout";
+import HomePage from "./pages/HomePage";
+import UploadFilePage from "./pages/UploadFilePage";
 
 const router = createBrowserRouter(
-    createRoutesFromElements(<Route index element={<FileUploader />} />)
+    createRoutesFromElements(
+        <Route path="/" element={<MainLayout />}>
+            <Route index element={<HomePage />} />
+            <Route path="/upload" element={<UploadFilePage />} />
+        </Route>
+    )
 );
 
 function App() {
