@@ -2,18 +2,18 @@ function MissionTable({ data }) {
     function fillRows(data) {
         return data.map((row) => (
             <>
-                <tr data-bs-toggle="collapse" data-bs-target={`#${row[0]}`}>
-                    <td className="p-4">{row[0]}</td>
-                    <td className="p-4">{row[1]}</td>
-                    <td className="p-4">{row[2]}</td>
-                    <td className="p-4">{row[3]}</td>
-                    <td className="p-4">{row[4]}</td>
+                <tr data-bs-toggle="collapse" data-bs-target={`#${row['NCE (Prio)'].substring(0, 7)}`}>
+                    <td className="p-4">{row['NCE (Prio)']}</td>
+                    <td className="p-4">{row['OM Solicitante']}</td>
+                    <td className="p-4">{row['Posto']}</td>
+                    <td className="p-4">{row['Perfil']}</td>
+                    <td className="p-4">{row['Conhecimento Específico']}</td>
                 </tr>
                 <tr>
                     <td colSpan="6" className="p-0">
                         <div
-                            id={row[0]}
-                            class="p-0 collapse"
+                            id={`${row['NCE (Prio)'].substring(0, 7)}`}
+                            className="p-0 collapse"
                             style={{
                                 color: "white",
                             }}
@@ -21,27 +21,19 @@ function MissionTable({ data }) {
                             <ul className="list-group rounded-0">
                                 <li className="list-group-item">
                                     <h6>Aplicação</h6>
-                                    <span>{row[5]}</span>
+                                    <span>{row['Aplicação']}</span>
                                 </li>
                                 <li className="list-group-item">
                                     <h6>Instituição/Local</h6>
-                                    <span>{row[6]}</span>
+                                    <span>{row['Instituição/ Local']}</span>
                                 </li>
                                 <li className="list-group-item">
                                     <h6>Programa</h6>
-                                    <span>{row[7]}</span>
+                                    <span>{row['Programa']}</span>
                                 </li>
                                 <li className="list-group-item">
-                                    <h6>Nível</h6>
-                                    <span>{row[8]}</span>
-                                </li>
-                                <li className="list-group-item">
-                                    <h6>Classificação após o Curso</h6>
-                                    <span>{row[12]}</span>
-                                </li>
-                                <li className="list-group-item">
-                                    <h6>Prioridade DCT</h6>
-                                    <span>{row[13]}</span>
+                                    <h6>OM PACE</h6>
+                                    <span>{row['OM PACE']}</span>
                                 </li>
                             </ul>
                             <button className="btn w-100 rounded-0 btn-success">
