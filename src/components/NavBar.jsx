@@ -5,7 +5,7 @@ function NavBar() {
     return (
         <nav className="navbar sticky-top navbar-expand-sm bg-light">
             <div className="container">
-                <a href="#" className="navbar-brand mb-0 h1">
+                <a href="/" className="navbar-brand mb-0 h1">
                     <img src={logo} alt="Logo" height={60} />
                 </a>
                 <div>
