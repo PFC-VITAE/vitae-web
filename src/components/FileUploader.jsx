@@ -19,7 +19,7 @@ function FileUploader({ setData, setLoading }) {
                 setData(data);
                 return data;
             })
-            .catch((error) => alert(error))
+            .catch((error) => alert("Erro ao se comunicar com o servidor"))
             .finally(() => setLoading(false));
     }
 
