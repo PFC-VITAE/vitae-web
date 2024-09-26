@@ -88,7 +88,7 @@ function MissionTable({ data }) {
                 <div className="container my-5">
                     <div className="bg-white rounded-4 shadow">
                         <div className="py-4 px-5 border-bottom border-secondary-light">
-                            <h2>Resultado</h2>
+                            <h2>Selecione uma NCE</h2>
                         </div>
                         <div className="px-4 table-responsive">
                             <table className="table my-4 table-borderless table-bordered small">
