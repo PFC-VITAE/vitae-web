@@ -11,6 +11,7 @@ function Hero() {
             </h1>
             <div className="col-lg-6 mx-auto">
                 <p className="lead mb-4">
+                    O Sistema Vitae é um acrônimo de Verificação InTeligente de Adequação a Experiência.
                     Realize o envio de arquivos PDF com uma separata detalhada
                     de Necessidades Conhecimento Específicas de para análise de
                     candidatos
